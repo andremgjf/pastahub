@@ -10,7 +10,7 @@ numero="numero"
 
       if [ $numero -ge 0 ];then  #testa se e igual ou maior que 0
   echo Número Positivo $numero !
-else
-  echo Número Negativo $numero ! #mostra se for abaixo de 0
+else                            #testa se e negativo
+  echo Número Negativo $numero ! 
 fi
 
