@@ -1,18 +1,26 @@
 
 #!/bin/bash
 
-#graus=x
-#grausminutos=y
- #declarando a varialvel como inteiro
+#variaveis
+graus="graus"
+grausminutos="grausminutos"
+ 
 
       echo "Entre com o grau (Positivo ou Negativo)"
 read graus
 
- #while [ $graus -eq ]  #testa se o campo não esta vazio
-#do
- #     echo "O campo esta vazio, digite um numero valido"
-#read graus
-#done
+
+# testa se o grau é positivo/negativo ou campo vázio
+if [ -z $graus ]; then
+     echo Não pode ser vázio
+
+elif [ $graus -ge 0 ];then  #testa se e igual ou maior que 0
+  echo Número Positivo $graus !
+
+else                           #testa se e negativo
+  echo Número Negativo $graus ! 
+fi
+#########################
 
 
 
