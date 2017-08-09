@@ -1,5 +1,3 @@
-
-
 #!/bin/bash
 #testando o while
 
@@ -7,13 +5,10 @@ numero="numero"
   echo "Entre com o número:"
  read $numero
 
-if [ -z $numero ]; then
-echo esta vazio oo burro
-
-else
-echo esta bom
-fi
-
+while [ -z $numero ]; do
+echo esta vazio
+read $numero
+done
 #while [ $numero -eq " " ]; do 
  #  echo Digite um número válido
 #done
