@@ -1,41 +1,29 @@
 
-#!/bin/bash
+#!/bin/bash -x
 
 #variaveis
 graus="graus"
 grausminutos="grausminutos"
- 
 
-      echo "Entre com o grau (Positivo ou Negativo)"
+
+echo "Entre com o grau (Positivo ou Negativo)"
 read graus
 
 
-# testa se o grau é positivo/negativo ou campo vázio
-if [ -z $graus ]; then
-     echo Não pode ser vázio
+if [ -z $graus ]; then  # testa se o campo esta vázio
+     echo O campo esta vazio o burro!
+#fi
 
-elif [ $graus -ge 0 ];then  #testa se e igual ou maior que 0
-  echo Número Positivo $graus !
 
-else                           #testa se e negativo
-  echo Número Negativo $graus ! 
+
+elif [ $graus -ge 0 ]; then #testa se é maior ou igual a zero (positivo)
+  grausminutos=$((graus*2/60+6)) 
+   echo "LNB $grausminutos horas positivo"
+#fi
+
+
+elif [ $graus -lt 0 ]; then #testa se é menor que zero (negativo)
+ grausminutos=$((graus*2/60-6))
+       echo "LNB $grausminutos horas negativo"
+
 fi
-#########################
-
-
-
- if [ $graus -ge 0 ];  then
-    grausminutos=$((graus*2/60-6))  #se o valor inserido em graus for negativo(-)
-
-          
-       echo "LNB $grausminutos horas"
-fi
-
-else
-     grausminutos=$((graus*2/60+6))  #se o valor inserido em graus for positivo(+)
-    
-      echo "LNB $grausminutos horas"
-fi
-
-
-
