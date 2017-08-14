@@ -1,5 +1,7 @@
-#!/bin/bash
-                 # soma de dois campos
+
+#!/bin/bash -x
+# soma de dois campos
+
 #campo1="1"
 #campo2="2"
 #total="3"
@@ -9,7 +11,7 @@
 #total=$[campo1 + campo2]
 #echo "total $total"
 #######################################################################################
- #precedência, natualmente seguirá a ordem mas oque esta entre ()será resolvido primeiro
+ #Precedência, natualmente seguirá a ordem mas oque esta entre ()será resolvido primeiro
  
 #campo1="1"
 #campo2="2"
@@ -22,7 +24,7 @@
 #total=$[campo1/(campo2*campo3)]
 #echo "Esse é o $total"
 ######################################################################################
-# Precedência natual
+# Precedência Natual
 
 #campo1="1"
 #campo2="2"
@@ -39,22 +41,37 @@
 #total=$[campo1*campo2/campo3+campo4-campo5]
 #echo "Resultado:$total"
 ########################################################################################
-# Precedência escolhida 
+# Precedência Escolhida 
 
-campo1="1"
-campo2="2"
-campo3="3"
-campo4="4"
-campo5="5"
-total ="5"
-echo "Digite cinco números"
-read campo1
-read campo2
-read campo3
-read campo4
-read campo5
-total=$[campo1/campo2*campo3-campo4+campo5]
-echo "Resultado:$total"
+#campo1="1"
+#campo2="2"
+#campo3="3"
+#campo4="4"
+#campo5="5"
+#total ="5"
+#echo "Digite cinco números"
+#read campo1
+#read campo2
+#read campo3
+#read campo4
+#read campo5
+#total=$[campo1/campo2*campo3-campo4+campo5]
+#echo "Resultado:$total"
+ ####teminar de escalonar a ordem correta!!!!!!!!!
 
+##############################################################
+# Condicional Simples
 
+#n1=1
+#n2=2
+#echo Entre com o n1 e n2!
+#read n1
+#read n2
+#  if [ $n1 -ge $n2 ]; then
+#echo "N1: $n1  é maior ou igual ao N2: $n2 "
+
+# else
+#echo "N2: $n2 é maior  $n1"
+#fi
+##################################################################
 
