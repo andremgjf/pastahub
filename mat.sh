@@ -1,6 +1,6 @@
 
-#!/bin/bash -x
-# soma de dois campos
+#!/bin/bash
+# Soma de dois campos
 
 #campo1="1"
 #campo2="2"
@@ -84,6 +84,8 @@
 #done
 ###############################################################
 
+# Sintaxe While
+
 echo "Entre com um valor positivo"
 read valor
 i=1
@@ -92,3 +94,4 @@ do
  echo "$i"
 ((i=$i+1 ))
 done
+##################################################################
