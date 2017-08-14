@@ -24,7 +24,7 @@
 #total=$[campo1/(campo2*campo3)]
 #echo "Esse é o $total"
 ######################################################################################
-# Precedência Natual
+# Precedência Natural
 
 #campo1="1"
 #campo2="2"
@@ -74,4 +74,21 @@
 #echo "N2: $n2 é maior  $n1"
 #fi
 ##################################################################
+# Sintaxe do for
 
+#i=1
+#echo "Vamos testar o for"
+
+#for i in  {1000000..0}; do
+#echo "$i"
+#done
+###############################################################
+
+echo "Entre com um valor positivo"
+read valor
+i=1
+while [ $i -le $valor ]
+do
+ echo "$i"
+((i=$i+1 ))
+done
