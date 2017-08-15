@@ -1,6 +1,6 @@
 
-#!/bin/bash
-# Soma de dois campos
+#!/bin/bash -x
+# soma de dois campos
 
 #campo1="1"
 #campo2="2"
@@ -38,7 +38,7 @@
 #read campo3
 #read campo4
 #read campo5
-#total=$[campo1/campo2*campo3+campo4-campo5]
+#total=$[campo1*campo2/campo3+campo4-campo5]
 #echo "Resultado:$total"
 ########################################################################################
 # Precedência Escolhida 
@@ -55,11 +55,9 @@
 #read campo3
 #read campo4
 #read campo5
-#total=$[campo1/campo2*(campo3+campo4)-campo5]
+#total=$[campo1/campo2*campo3-campo4+campo5]
 #echo "Resultado:$total"
-#campo3+campo4
-#campo1/campo2
-#multiplica o resultado e subtrai o campo5
+                                             ####teminar de escalonar a ordem correta!!!!!!!!!
 
 ##############################################################
 # Condicional Simples
@@ -76,24 +74,4 @@
 #echo "N2: $n2 é maior  $n1"
 #fi
 ##################################################################
-# Sintaxe do for
 
-#i=1
-#echo "Vamos testar o for"
-
-#for i in  {1000000..0}; do
-#echo "$i"
-#done
-###############################################################
-
-# Sintaxe While
-
-#echo "Entre com um valor positivo"
-#read valor
-#i=1
-#while [ $i -le $valor ]
-#do
-# echo "$i"
-#((i=$i+1 ))
-#done
-##################################################################

@@ -17,13 +17,13 @@ if [ -z $graus ]; then  # testa se o campo esta vázio
 
 
 elif [ $graus -ge 0 ]; then #testa se é maior ou igual a zero (positivo)
-   grausminutos=$((graus*2/60+6)) 
+   grausminutos=$[(graus*2)/60+6] 
      echo "LNB positivo $grausminutos horas"
 
 
 
 elif [ $graus -lt 0 ]; then #testa se é menor que zero (negativo)
-   grausminutos=$((graus*2 % 60/12 )) ####REVISAR###
+   grausminutos=$[(graus*2) % 60/12] 
 
 echo "LNB negativo $grausminutos horas"
 
