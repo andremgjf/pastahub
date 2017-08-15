@@ -12,7 +12,7 @@ destino="/home/andre/rede/Backup_Prodoctor"
 data="date +%d/%m/%Y/%H/%M/%S"
 
 
-########CRIA O DIRETORIO CASO NÃO EXISTA####################################
+########CRIA O DIRETÓRIO CASO NÃO EXISTA####################################
 
 IF [ ! -d"/$destino"] ; then
         mkdir /$destino
