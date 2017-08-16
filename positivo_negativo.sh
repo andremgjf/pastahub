@@ -1,6 +1,6 @@
 
 #!/bin/bash 
-#testa se o número é  positivo ou negativo
+# testa se o número é  positivo ou negativo
 
 numero="numero"
   echo "Entre com o número:"
