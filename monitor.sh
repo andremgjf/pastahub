@@ -5,6 +5,6 @@ cm="cm"
 echo "Entre com os cm da tela"
  read $cm
 
-total=$[ cm/2 ]
+total=$[ cm/2.54 ]
 
-echo "$total Polegadas"
+echo "Tela de $total Polegadas"
