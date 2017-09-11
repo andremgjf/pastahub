@@ -13,6 +13,6 @@ total="total"
 echo "Entre com os cm da tela"
  read $cm
 
-$total=$[ cm / 2 ]
+$total=$[ cm / 2 ];
 
 echo "$total Polegadas"
