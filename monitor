@@ -4,15 +4,15 @@
 #o canto superior)
 #Será medico em centímetros usando uma regua comum e serão convertidos
 #em polegadas
-#--------------------------------------------------------------------#
+#--------------------------------------------------------------------
 
-#!/bin/bash
-cm="cm"
-total="total"
+#!/bin/bash -x
+cm="1"
+total="2"
 
 echo "Entre com os cm da tela"
  read $cm
 
-$total=$[ cm / 2 ];
+$total=$[ cm / 2 ]
 
 echo "$total Polegadas"
