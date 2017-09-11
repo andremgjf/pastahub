@@ -7,5 +7,5 @@ echo "Entre com os cm da tela"
 
 #total=$[ cm/2.54 ]
 total=$[ cm/2 |bc ] 
-echo $total
-#echo "Tela de $total Polegadas"
+
+echo "Tela de $total Polegadas"
