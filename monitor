@@ -1,0 +1,17 @@
+#O código calcula as polegadas de um monitor ou tv
+#A tela deverá ser medica na diagonal do monitor (do canto abaixo até
+o canto superior)
+#Será medico em centímetros usando uma regua comum e serão convertidos
+em polegadas
+#--------------------------------------------------------------------#
+
+#!/bin/bash
+cm=cm
+total=total
+
+echo "Entre com os cm da tela"
+ read cm
+
+$total=[ cm/2,54 ]
+
+echo "$total Polegadas"
