@@ -5,7 +5,7 @@
 
 #!/bin/bash
 cm="cm"
-
+polegadas="polegadas"
 echo "Entre com os centímetros da tela"
  read $cm
 clear
@@ -14,7 +14,7 @@ clear
 #total=$[ cm+2,1 | bc]  # calcular número com ponto flutuante
 
 #echo $total
-cm=$(echo "scale=3;$cm*2" | bc -q)
-
+polegadas=$(echo "scale=5; $cm/2" | bc -q)
+echo $polegadas
 
 #echo "Tela de $total Polegadas"
