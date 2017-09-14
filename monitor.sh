@@ -12,8 +12,9 @@ clear
 
 #total=$[ cm/2.54 ]
 #total=$[ cm+2,1 | bc]  # calcular número com ponto flutuante
-echo $total
-#"scale=2; cm*2" | bc
+
+#echo $total
+cm=$(echo "scale=3;$cm*2" | bc -q)
 
 
 #echo "Tela de $total Polegadas"
