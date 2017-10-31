@@ -1,7 +1,8 @@
 # Exibe o código das cidades brasileiras
 #!/bin/bash
 
-echo       Estado         código
-#echo---------------------------
-echo       Acre(AC)       68       
+echo       "ESTADO         CÓDIGO"
+ #echo"-----------------------------"
+ #echo"-----------------------------"
+echo       "Acre(AC)       68"       
 
