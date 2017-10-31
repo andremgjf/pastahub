@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#dialog --yesno 'clique no botão' 5 40
+ # msg yes, no
+
+#dialog --msgbox 'clique no botão' 5 40
+ #5 linhas 40 colunas
+ 
