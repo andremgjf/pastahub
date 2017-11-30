@@ -2,10 +2,10 @@
 
 #!/bin/bash
 
+date="date +%B/%a"
+$date
 
-date
+#if [ date = Qui ]; then
+# echo "Hoje e quinta- feira"
 
-if [ date = Qui ]; then
- echo "Hoje e quinta- feira"
-
-fi
+#fi
