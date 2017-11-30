@@ -2,4 +2,10 @@
 
 #!/bin/bash
 
-data="date +%a"
+
+date
+
+if [ date = Qui ]; then
+ echo "Hoje e quinta- feira"
+
+fi
