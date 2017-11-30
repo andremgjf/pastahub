@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-date="date +%B/%a"
+date="date +%a/%B"
 $date
 
 #if [ date = Qui ]; then
