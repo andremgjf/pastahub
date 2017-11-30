@@ -6,7 +6,7 @@ date="date +%a:%B"
 $date
 
 
-if [ "$date" = 'Qui' ]; then
- echo 'Hoje e quinta- feira'
+if [ "$date" = "Qui" ]; then
+ echo "Hoje e quinta- feira"
 
 fi
