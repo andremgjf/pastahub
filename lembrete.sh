@@ -19,6 +19,13 @@ $mesatual
 ########################################################
 ###################Ligar gerador########################
 
-if [ "$dia"="$ses" ]; then
-  echo "Hoje não se esqueça do gerador as 14:00 horas"
-fi
+ #if [ "$dia"="$ses" ]; then
+ #  echo "Hoje não se esqueça do gerador as 14:00 horas"
+ #fi
+
+#######################################################
+###############Montar escala de sexta##################
+
+if [ "$dia"="Sex" ]; then
+ echo "Hoje precisa montar a escala"
+if
