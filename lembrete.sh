@@ -10,7 +10,11 @@ $dia
 $data
 $mesatual
 
-    if [ "$data"="Sex" and "$dia" +7="$mesatual" ]; then
-          echo "Amanhã tem compromisso!!!!"
+ if [ "$data"="Sex" ] && [ "$dia"+7="$mesatual" ]; then
+    echo "Amanhã tem compromisso!!!!"
+ fi
 
-    fi
+
+# if [ "$dia"+7="$mesatual" ]; then
+# echo "dia mais 7 mes atual"
+# fi
