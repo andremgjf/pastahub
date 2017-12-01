@@ -26,6 +26,6 @@ $mesatual
 #######################################################
 ###############Montar escala de sexta##################
 
-if [ "$dia"="Sex" ]; then
+if [ "$data"="Sex" ]; then
  echo "Hoje precisa montar a escala"
 if
