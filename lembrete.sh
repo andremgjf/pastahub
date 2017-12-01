@@ -2,12 +2,15 @@
 
 #!/bin/bash
 
-data="date +%a:%B"
+data="date +%a"
+mesatual="date +%B"
 dia="date +%d"
-$data
+
 $dia
+$data
+$mesatual
 
-#if [ "$data"="Sex"and $dia +7=mesatual ]; then
-# echo "Amanhã tem compromisso!!!!"
+if [ "$data"="Sex"and $dia +7=$mesatual ]; then
+ echo "Amanhã tem compromisso!!!!"
 
-#fi
+fi
