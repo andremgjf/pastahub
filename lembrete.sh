@@ -2,11 +2,11 @@
 
 #!/bin/bash
 
-date="date +%a:%B"
-$date
+data="date +%a:%B"
+$data
 
 
-if [ "$date" = "Qui" ]; then
- echo "Hoje e quinta- feira"
+if [ "$data"="Sex" ]; then
+ echo "hoje e sexta-feira"
 
 fi
