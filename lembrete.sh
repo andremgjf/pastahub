@@ -29,3 +29,5 @@ $mesatual
 if [ "$data"="Sex" ]; then
 echo "Hoje precisa montar a escala"
 fi
+
+######################################################
