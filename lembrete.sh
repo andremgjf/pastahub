@@ -1,5 +1,4 @@
 #Lembrete semanal usando o calendário do shell
-
 #!/bin/bash
 
 data="date +%a"
@@ -10,11 +9,16 @@ $dia
 $data
 $mesatual
 
- if [ "$data"="Sex" ] && [ "$dia"+7="$mesatual" ]; then
-    echo "Amanhã tem compromisso!!!!"
- fi
+########################################################
+######Lembrete das festas da última quinta do mês#######
 
+ #if [ "$data"="Qua" ] && [ "$dia"+7="$mesatual" ]; then
+ #   echo "Amanhã tem festa!!!!"
+ #fi
 
-# if [ "$dia"+7="$mesatual" ]; then
-# echo "dia mais 7 mes atual"
-# fi
+########################################################
+###################Ligar gerador########################
+
+if [ "$dia"="$ses" ]; then
+  echo "Hoje não se esqueça do gerador as 14:00 horas"
+fi
