@@ -2,12 +2,8 @@
 #!/bin/bash -x
 
 data=$(date +%a)
-#mesatual=$(date +%B)
-#dia=$(date +%d)
-
-#$dia
-#$data
-#$mesatual
+mesatual=$(date +%B)
+dia=$(date +%d)
 
 
 ########################################################
@@ -15,6 +11,8 @@ data=$(date +%a)
 
  if [ "$data" = "Qua" ] && [ "$dia"+7="$mesatual" ]; then
     echo "Amanhã tem festa!!!!"
+else
+ exit
  fi
 
 ########################################################
