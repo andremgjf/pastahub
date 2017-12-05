@@ -14,14 +14,14 @@ dia=$(date +%d)
 ########################################################
 ######Lembrete das festas da última quinta do mês#######
 
- #if [ "$data"="Qua" ] && [ "$dia"+7="$mesatual" ]; then
+ #if [ "$data" = "Qua" ] && [ "$dia"+7="$mesatual" ]; then
  #   echo "Amanhã tem festa!!!!"
  #fi
 
 ########################################################
 ###################Ligar gerador########################
 
- #if [ "$data"="$Qua" ]; then
+ #if [ "$data" = "$Qua" ]; then
  #  echo "Hoje não se esqueça do gerador as 14:00 horas"
  #fi
 
@@ -29,8 +29,9 @@ dia=$(date +%d)
 ###############Montar escala de sexta##################
 
 
-if [ "$dia"="$ter" ]; then
-  echo "Amanhã montar escala!!!!"
-fi
+#if [ "$dia" = "$Sex" ]; then
+#  echo "Amanhã montar escala!!!!" $dia
+
+#fi
 
 ######################################################
