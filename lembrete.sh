@@ -13,17 +13,17 @@ data=$(date +%a)
 ########################################################
 ######Lembrete das festas da última quinta do mês#######
 
- #if [ "$data" = "Qua" ] && [ "$dia"+7="$mesatual" ]; then
- #   echo "Amanhã tem festa!!!!"
- #fi
+ if [ "$data" = "Qua" ] && [ "$dia"+7="$mesatual" ]; then
+    echo "Amanhã tem festa!!!!"
+ fi
 
 ########################################################
 ###################Ligar gerador########################
 
- if [ "$data" = "$Qua" ]; then
- echo "hoje tem gerador as 14:00 horas"
+# if [ "$data"="$Ter" ]; then
+#   echo "hoje tem gerador as 14:00 horas"
 
- fi
+# fi
 
 #######################################################
 ###############Montar escala de sexta##################
