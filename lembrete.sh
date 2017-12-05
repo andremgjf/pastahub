@@ -1,10 +1,9 @@
 #Lembrete semanal usando o calendário do shell
 #!/bin/bash -x
 
-data=$(date +%A)
-mesatual=$(date +%B)
-dia=$(date +%d)
-
+data=$(date +%a)
+#mesatual=$(date +%B)
+#dia=$(date +%d)
 
 #$dia
 #$data
@@ -21,17 +20,17 @@ dia=$(date +%d)
 ########################################################
 ###################Ligar gerador########################
 
- #if [ "$data" = "$Qua" ]; then
- #  echo "Hoje não se esqueça do gerador as 14:00 horas"
- #fi
+ if [ "$data" = "$Qua" ]; then
+ echo "hoje tem gerador as 14:00 horas"
+
+ fi
 
 #######################################################
 ###############Montar escala de sexta##################
 
 
-#if [ "$dia" = "$Sex" ]; then
-#  echo "Amanhã montar escala!!!!" $dia
-
+#if [ "$data" = "$sex" ]; then
+ # echo "Montar escala!!!!"
 #fi
 
 ######################################################
