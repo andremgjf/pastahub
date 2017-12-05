@@ -1,14 +1,14 @@
 #Lembrete semanal usando o calendário do shell
-#!/bin/bash -x
+#!/bin/bash
 
-data=$(date +%A)
-mesatual=$(date +%B)
-dia=$(date +%d)
+data="date +%A"
+mesatual="date +%B"
+dia="date +%d"
 
 
-#$dia
-#$data
-#$mesatual
+$dia
+$data
+$mesatual
 
 
 ########################################################
@@ -28,9 +28,13 @@ dia=$(date +%d)
 #######################################################
 ###############Montar escala de sexta##################
 
+#hora="date +"%T""
 
-if [ "$dia"="$ter" ]; then
-  echo "Amanhã montar escala!!!!"
+
+if [ "$um"="$dois" ];then
+  echo "Amanhã monstar escala!!!!"
+else 
+ echo "fffff"
 fi
 
 ######################################################

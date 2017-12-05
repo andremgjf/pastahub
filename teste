@@ -1,8 +1,0 @@
-#!/bin/bash
-
-n=$n
-
-echo entre com o valor de n:
-read n
-clear
-echo "voce digitou ...$n"
