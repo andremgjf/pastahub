@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Descubra o tamanho ideal do quadro para bicicleta de acordo com sua altura
+#Inicialmente meça seu cavalo "medica do chaão atá um pouco abaixo da cintura"
+ #Essa medida em cm será usada para descobrir o tamanho do quadro
+
+
+
+cm="cm"
+polegadas="polegadas"
+
+echo "Entre com seu cavalo (CM)"
+  read $cm
+
+$polegadas=[$cm * 2]
+
+echo $polegadas
+ 
