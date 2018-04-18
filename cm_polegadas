@@ -10,7 +10,7 @@ polegadas="polegadas"
 echo "Entre com seu cavalo (CM)"
   read $cm
 
-polegadas=$(($cm/2 -14 | bc)) terminar amanhã
-
-echo $polegadas
+#polegadas=$(($cm/2 -14 | bc))
+polegadas=$(echo "scale=1; $cm/2.54 -14" | bc)
+echo O tamanho correto do quadro e: $polegadas
  
