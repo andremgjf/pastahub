@@ -1,0 +1,28 @@
+#!/bin/bash
+
+######### CRIAÇÃO DE VARIAVEL ########
+destino="/home/andre/rede/Backup_Prodoctor"
+data="date +%d/%m/%Y/%H/%M/%S"
+
+
+log="/home/andre/rede/Backup_Prodoctor/log.log"
+
+
+#########  CRIA O DIRETORIO CASO NÃO EXISTA #########
+
+if [ ! -d "/$destino" ];then
+    mkdir /$destino
+     chmod 0777 $destino
+
+fi
+   ############# REALIZANDO O BACKUP #############
+
+   
+
+pg_dump -U postgres prodoctorplussql -v > $destino/prodoctor_$(date +%d-%m-%Y-%H-%M-%S).bkp
+
+exec  > /home/andre/rede/Backup_Prodoctor/log_$(date +%d-%m-%Y-%H-%M-%S).log
+
+
+echo Backup PostgreSQL terminado em  .... $(date) 
+
